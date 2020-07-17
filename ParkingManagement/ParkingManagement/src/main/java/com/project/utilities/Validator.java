@@ -4,7 +4,7 @@ public class Validator {
 
 	// Validates input for the Car Registration Number
 	public static boolean registrationNumberValidator(String regNo) {
-		String regex = "[A-Z]{2}[- ][0-9]{2}[- ][A-Z]{2}[- ][0-9]{4}";
+		String regex = "[A-Z]{2}[-][0-9]{2}[-][A-Z]{2}[-][0-9]{4}";
 		if (regNo.toUpperCase().matches(regex)) {
 			return true;
 		}

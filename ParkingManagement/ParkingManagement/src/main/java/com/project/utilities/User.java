@@ -37,13 +37,13 @@ public class User {
 //
 //				// CREATING Service TYPE OBJECT
 //				service = ServiceImplementation.getInstance(n);
-//				System.out.println("Created a parking lot with " + n + " slots");
+//				System.out.println("Created a parking lot with " + n + " slots.");
 //				break;
 //
 //			case "park":
 //				// VALIDATORS FROM VALIDATOR CLASS
 //				if (!Validator.registrationNumberValidator(str[1]) && !Validator.colourValidator(str[2])) {
-//					System.out.println("incorrect statement type");
+//					System.out.println("Re-Enter Registration Number XX-XX-XX-XXXX format & Colour should not contain numbers and length should be minimum 3.");
 //					break;
 //				}
 //
@@ -61,13 +61,13 @@ public class User {
 //				slot = Integer.parseInt(str[1]);
 //				// CHECKING VALID SLOT IN RANGE OF PARKING LOT
 //				if (slot > n || slot < 1) {
-//					System.out.println("incorrect statement type");
+//					System.out.println("invalid slot number.");
 //					break;
 //				}
 //				// IF VAILD INPUT ENTERS TRY BLOCK ELSE GOES TO NEXT INPUT
 //				try {
 //					service.leave(slot);
-//					System.out.println("Slot number " + slot + " is free");
+//					System.out.println("Slot number " + slot + " is free.");
 //				}
 //				// IF SLOT WAS EMPTY PREVIOUSLY THROWS ERROR
 //				catch (Exception e) {
@@ -92,7 +92,7 @@ public class User {
 //
 //			case "registration_numbers_for_cars_with_colour":
 //				if (!Validator.colourValidator(str[1])) {
-//					System.out.println("incorrect statement type");
+//					System.out.println("Colour should not contain numbers and length should be minimum 3.");
 //					break;
 //				}
 //				// IF VAILD INPUT ENTERS TRY BLOCK ELSE GOES TO NEXT INPUT
@@ -112,7 +112,7 @@ public class User {
 //
 //			case "slot_numbers_for_cars_with_colour":
 //				if (!Validator.colourValidator(str[1])) {
-//					System.out.println("incorrect statement type");
+//					System.out.println("Colour should not contain numbers and length should be minimum 3.");
 //					break;
 //				}
 //				// IF VAILD INPUT ENTERS TRY BLOCK ELSE GOES TO NEXT INPUT
@@ -132,7 +132,7 @@ public class User {
 //
 //			case "slot_number_for_registration_number":
 //				if (!Validator.registrationNumberValidator(str[1])) {
-//					System.out.println("incorrect statement type");
+//					System.out.println("Re-Enter Registration Number XX-XX-XX-XXXX format.");
 //					break;
 //				}
 //				// IF VAILD INPUT ENTERS TRY BLOCK ELSE GOES TO NEXT INPUT
@@ -155,45 +155,45 @@ public class User {
 //									UNCOMMENT THE BELOW CODE AND COMMENT THE ABOVE CODE FOR A DIFFERENT TYPE OF IMPLEMENTATION OF APPLICATION
 //-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------		
 
-		System.out.println("Welcome to Parking Manager");
+		System.out.println("Welcome to Parking Manager.");
 		boolean exit = false;
 
 		String regNo, colour;
 
-		System.out.println("Enter the number of spaces in Parking lot");
+		System.out.println("Enter the number of spaces in Parking lot.");
 		n = Integer.parseInt(br.readLine().trim());
 
 		service = ServiceImplementation.getInstance(n);
-		System.out.println("Created a parking lot with " + n + " slots");
+		System.out.println("Created a parking lot with " + n + " slots.");
 
 		while (!exit) {
 
-			System.out.println("press 1: To park A Car");
-			System.out.println("press 2: To make a car exit");
-			System.out.println("press 3: To get status of parking");
-			System.out.println("press 4: To get Registration numbers for cars with same colour");
-			System.out.println("press 5: To get slot number for cars with same colour");
-			System.out.println("press 6: To get parking slot of car using registration number");
-			System.out.println("press 7: To Exit Application");
+			System.out.println("press 1: To park A Car.");
+			System.out.println("press 2: To make a car exit.");
+			System.out.println("press 3: To get status of parking.");
+			System.out.println("press 4: To get Registration numbers for cars with same colour.");
+			System.out.println("press 5: To get slot number for cars with same colour.");
+			System.out.println("press 6: To get parking slot of car using registration number.");
+			System.out.println("press 7: To Exit Application.");
 			try {
 				Integer x = Integer.parseInt(br.readLine().trim());
 
 				switch (x) {
 				case 1:
-					System.out.println("Enter Registration Number");
+					System.out.println("Enter Registration Number.");
 					regNo = br.readLine().trim();
 
 					// Re-enter Until valid input is received (Validators for registration number
 					// and colour used from Validator class)
 					while (!Validator.registrationNumberValidator(regNo)) {
 						System.out.println(
-								"Re-Enter Registration Number XX-XX-XX-XXXX format '-' can be replaced with ' '");
+								"Re-Enter Registration Number XX-XX-XX-XXXX format,please re-enter.");
 						regNo = br.readLine().trim();
 					}
 					System.out.println("Enter Colour");
 					colour = br.readLine().trim();
 					while (!Validator.colourValidator(colour)) {
-						System.out.println("Entered incorrect colour.Please re-enter");
+						System.out.println("Colour should not contain numbers and length should be minimum 3, please re-enter.");
 						colour = br.readLine().trim();
 					}
 					try {
@@ -204,10 +204,10 @@ public class User {
 					break;
 
 				case 2:
-					System.out.println("Enter slot number");
+					System.out.println("Enter slot number.");
 					slot = Integer.parseInt(br.readLine().trim());
 					while (slot > n || slot < 1) {
-						System.out.println("Incorrect slot number, Please re-enter");
+						System.out.println("invalid slot number, Please re-enter.");
 						slot = Integer.parseInt(br.readLine().trim());
 					}
 					try {
@@ -232,10 +232,10 @@ public class User {
 					break;
 
 				case 4:
-					System.out.println("Enter the colour");
+					System.out.println("Enter the colour.");
 					colour = br.readLine().trim();
 					while (!Validator.colourValidator(colour)) {
-						System.out.println("Entered incorrect colour.Please re-enter");
+						System.out.println("Colour should not contain numbers and length should be minimum 3, Please re-enter.");
 						colour = br.readLine().trim();
 					}
 					try {
@@ -254,7 +254,7 @@ public class User {
 					System.out.println("Enter the colour");
 					colour = br.readLine().trim();
 					while (!Validator.colourValidator(colour)) {
-						System.out.println("Entered incorrect colour.Please re-enter");
+						System.out.println("Colour should not contain numbers and length should be minimum 3, Please re-enter.");
 						colour = br.readLine().trim();
 					}
 					try {
@@ -274,7 +274,7 @@ public class User {
 					regNo = br.readLine().trim();
 					while (!Validator.registrationNumberValidator(regNo)) {
 						System.out.println(
-								"Re-Enter Registration Number XX-XX-XX-XXXX format '-' can be replaced with ' '");
+								"Re-Enter Registration Number XX-XX-XX-XXXX format, please re-enter.");
 						regNo = br.readLine().trim();
 					}
 					try {
@@ -289,7 +289,7 @@ public class User {
 				}// switch Case end
 			} // try end
 			catch (Exception e) {
-				System.out.println("Incorrect Input Format");
+				System.out.println("Incorrect Input Format.");
 			}
 		} // while end
 
