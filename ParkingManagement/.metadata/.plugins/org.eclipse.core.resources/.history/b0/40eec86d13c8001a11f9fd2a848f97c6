@@ -1,0 +1,14 @@
+package com.project.parking;
+
+public interface Vehicle {
+
+	// getter for getRegistrationNumber
+	String getRegistrationNumber();
+
+	// getter for getColour
+	String getColour();
+
+	// getter for getParkingSlot
+	Integer getParkingSlot();
+
+}

@@ -1,0 +1,38 @@
+package com.project.parking;
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.TreeSet;
+
+class ParkingArea{
+	
+			//Maintains the status of slots and Cars Parked In them 
+			private Map<Integer,Car> parkingStatus=new HashMap<Integer,Car>();;			
+			
+			//Holds the Status of empty Slots TreeSet as slots have unique numbers and must be alloted in increasing order
+			private TreeSet<Integer> emptySlots=new TreeSet<Integer>();
+			
+//-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------			
+			//Constructor
+			ParkingArea(int n){
+				for(int i=1;i<=n;i++) {										
+					parkingStatus.put(i,null);
+					emptySlots.add(i);
+			}
+			}
+
+//---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+			
+			//getter method for ParkingStatus
+			public Map<Integer, Car> getParkingStatus() {
+				return parkingStatus;
+			}
+			
+//-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------		
+			
+			//getter method for	EmptySlots
+			public TreeSet<Integer> getEmptySlots() {
+				return emptySlots;
+			}
+			
+}

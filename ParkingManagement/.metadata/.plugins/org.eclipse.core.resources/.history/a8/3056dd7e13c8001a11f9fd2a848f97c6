@@ -1,0 +1,6 @@
+package com.project.parking;
+
+public interface Vehicle {
+
+
+}
