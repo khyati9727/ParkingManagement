@@ -1,6 +1,7 @@
 # ParkingManagement
-![](ParkingManagementDoc.pdf)
+          **INPUT TYPE 1**
 ![](ConsoleScreenShot/main_type_1.jpg)
+          **INPUT TYPE 2**
 ![](ConsoleScreenShot/main_type_2_1.jpg)
 ![](ConsoleScreenShot/main_type_2_2.jpg)
 ![](ConsoleScreenShot/main_type_2_3.jpg)
