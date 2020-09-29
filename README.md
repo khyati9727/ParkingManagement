@@ -24,6 +24,7 @@ slot_number_for_registration_number KA-01-P-333**
                                                                            
 **INPUT TYPE 2**
 
+
                                                                                      
 ![](ConsoleScreenShot/main_type_2_1.jpg)
 ![](ConsoleScreenShot/main_type_2_2.jpg)
