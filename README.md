@@ -1,6 +1,6 @@
 # ParkingManagement 
 
-**INPUT TYPE 1
+**INPUT TYPE 1 : 
 INPUT STATEMENTS:
 create_parking_lot 4
 park CH-01-YT-3201 white
@@ -22,7 +22,7 @@ slot_number_for_registration_number KA-01-P-333**
                                                                            
                                                                                                                                       
                                                                            
-**INPUT TYPE 2**
+**INPUT TYPE 2 :**
 
 
                                                                                      
