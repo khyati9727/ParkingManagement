@@ -1,5 +1,5 @@
 # ParkingManagement
-
+![](ParkingManagementDoc.pdf)
 ![](ConsoleScreenShot/main_type_1.jpg)
 ![](ConsoleScreenShot/main_type_2_1.jpg)
 ![](ConsoleScreenShot/main_type_2_2.jpg)
