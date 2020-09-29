@@ -1,7 +1,11 @@
 # ParkingManagement
 
-
 ![](ConsoleScreenShot/main_type_1.jpg)
+![](ConsoleScreenShot/main_type_2_1.jpg)
+![](ConsoleScreenShot/main_type_2_2.jpg)
+![](ConsoleScreenShot/main_type_2_3.jpg)
+![](ConsoleScreenShot/main_type_2_4.jpg)
+![](ConsoleScreenShot/main_type_2_5.jpg)
 
 INPUT STATEMENTS:
 create_parking_lot 4
