@@ -1,4 +1,9 @@
 # ParkingManagement 
+The application helps in managing the parking slots byalloting nearest parking slot available.
+I have created two types of console inputs. User class consists of the main method.
+Validator class has the methods that are validating the data entered by the user.
+src/test/java consists of JUnit test methods.
+
 
 **INPUT TYPE 1 : 
 INPUT STATEMENTS:
