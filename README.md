@@ -6,7 +6,7 @@ src/test/java consists of JUnit test methods.
 
 
 **INPUT TYPE 1 : 
-INPUT STATEMENTS:
+INPUT STATEMENTS :
 create_parking_lot 4
 park CH-01-YT-3201 white
 park DL 41 YR 3276 blue
